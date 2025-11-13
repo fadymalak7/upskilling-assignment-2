@@ -1,0 +1,85 @@
+/* Hero Section */
+
+.hero-section {
+    padding-bottom: 120px;
+}
+
+.hero-text {
+    flex-basis: 65%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.hero-text h1 span {
+    color: var(--main-color);
+}
+
+.hero-text p {
+    margin: 15px 0px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.download-btn img {
+    max-width: 125px;
+}
+
+.download-btn {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 5px 5px #00000003;
+
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #0000001a;
+}
+
+.hero-img {
+    position: relative;
+    left: 20%;
+    min-width: 400px;
+}
+
+.pattern-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    z-index: -1;
+    max-width: 50%;
+}
+
+/* Search Text */
+
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: var(--light-text-color);
+}
+
+.search-wrapper {
+    width: 100%;
+}
+
+.search-wrapper input {
+    box-shadow: 0px 0px 12px 4px #135EAC1F;
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 12px;
+}
+
+.highlightedText {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/*  */

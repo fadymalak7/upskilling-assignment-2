@@ -1,0 +1,49 @@
+.logo-wrapper {
+    max-width: 120px;
+}
+
+.nav-link a {
+    position: relative;
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.nav-link a:hover {
+    color: var(--main-color);
+}
+
+.nav-link a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease;
+}
+
+.nav-link a:hover::before {
+    transform: scaleX(1);
+}
+
+.sidebar-link {
+    padding: 10px;
+    border-bottom: solid #ddd 1px;
+    transition: 0.3s;
+}
+
+.sidebar-link:hover {
+    border-color: var(--main-color);
+}
+
+.sidebar-link a {
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.sidebar-link a:hover {
+    color: var(--main-color);
+}
