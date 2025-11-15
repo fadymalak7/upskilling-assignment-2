@@ -90,3 +90,25 @@ ul {
     font-size: 35px;
     font-weight: 500;
 }
+
+.page-link {
+    color: #000 !important;
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+
+
+i.star {
+    color: #EFBF14;
+}
+
+.details-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

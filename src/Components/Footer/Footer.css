@@ -1,0 +1,142 @@
+/* Footer styles */
+footer {
+    background-color: #051C34 !important;
+    color: #D6D6D6 !important;
+    padding: 30px 0 !important;
+}
+
+.footer-logo {
+    max-width: 400px !important;
+}
+
+.footer-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.follow-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.follow-social-icon i {
+    font-size: 24px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.follow-social-icon i:hover {
+    color: var(--main-color);
+}
+
+
+.footer-title {
+    width: fit-content;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 4px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+.footer-title::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -4px;
+    width: 60%;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a,
+.footer-links span {
+    color: #D6D6D6;
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: var(--main-color);
+}
+
+.footer-links a:hover:before {
+    opacity: 1;
+}
+
+.contact-info li a {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info li a img {
+    max-width: 20px;
+}
+
+
+.copyright-content {
+    border-top: var(--text-color) solid 1px;
+}
+
+.copyright small {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.copyright small a {
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+
+/* Media queries for responsiveness */
+
+
+
+
+@media (max-width: 992px) {
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        max-width: 300px !important;
+    }
+}
+
+@media (max-width:500px) {
+    .support-links {
+        margin-left: 0px;
+    }
+
+    .footer-logo {
+        max-width: 250px !important;
+    }
+
+    .copyright-content {
+        text-align: center;
+    }
+}

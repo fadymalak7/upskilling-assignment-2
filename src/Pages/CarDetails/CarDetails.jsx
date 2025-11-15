@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import "./CarDetails.css";
 
 export default function CarDetails() {
   const [car, setCar] = useState([]);
@@ -16,7 +15,7 @@ export default function CarDetails() {
 
   return (
     <>
-      <section className="details-page">
+      <section className="details-page position-relative d-flex flex-column justify-content-center vh-100">
         <div className="row">
           <div className="col-md-5">
             <div className="details-image">

@@ -39,7 +39,7 @@ export default function CarCard({ car, carSearch }) {
     //   <h2>{highlightSearchText(car.car, carSearch)}</h2>
     // </div>
 
-    <div className="col-md-3">
+    <div className="col-lg-3 col-md-6 col-sm-6">
       <div className="car-card">
         <div className="car-card-img text-center mb-3">
           <img src={imageUrl} alt={`${car.car} image`} className="car-img" />
@@ -48,11 +48,11 @@ export default function CarCard({ car, carSearch }) {
           {highlightSearchText(car.car, carSearch)} {car.car_model}
         </h2>
         <div className="reviews d-flex align-items-center mb-2">
-          <i className="fas fa-star me-1"></i>
+          <i className="fas fa-star me-1 star"></i>
           <span className="review-num fw-bolder">4.6</span>
           <span className="review-count text-muted">(2,432 reviews)</span>
         </div>
-        <div className="row g-1 border-bottom border-2 pb-2 mb-2">
+        <div className="row g-2 g-md-1 border-bottom border-2 pb-2 mb-2">
           <div className="col-md-6">
             <span className="car-spec">
               <i className="fas fa-user"></i>

@@ -1,0 +1,77 @@
+.logo-slider {
+    overflow: hidden;
+    padding: 70px 0;
+    background: white;
+    position: relative;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.logo-slider::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.logo-slider::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
+
+.logo-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+}
+
+.logo-slide {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0 40px;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-track:hover {
+    animation-play-state: paused;
+}

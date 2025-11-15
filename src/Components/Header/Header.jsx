@@ -11,7 +11,7 @@ export default function Header() {
           </div>
 
           {/* Header Links */}
-          <ul className="nav-links d-none d-md-flex align-items-center gap-5">
+          <ul className="nav-links d-none d-lg-flex align-items-center gap-5">
             <li className="nav-link">
               <NavLink to="/">Home</NavLink>
             </li>
@@ -27,7 +27,7 @@ export default function Header() {
           </ul>
 
           {/* Header Actions buttons */}
-          <div className="actions-wrapper d-none d-md-flex align-items-center gap-2">
+          <div className="actions-wrapper d-none d-lg-flex align-items-center gap-2">
             <a href="#" className="outline-btn">
               sign up
             </a>
@@ -38,7 +38,7 @@ export default function Header() {
 
           {/* Burger button for mobile */}
           <button
-            className="btn d-block d-md-none burger"
+            className="btn d-block d-lg-none burger"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#mobileMenu"

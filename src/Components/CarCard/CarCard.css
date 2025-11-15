@@ -21,9 +21,6 @@
     -webkit-box-orient: vertical;
 }
 
-.reviews i {
-    color: #EFBF14;
-}
 
 .car-spec {
     color: var(--light-text-color);
@@ -43,4 +40,19 @@
 .price-value {
     font-size: 16px;
     font-weight: 600;
+}
+
+@media (max-width:767px) {
+    .car-card-title {
+        font-size: 16px;
+    }
+
+    .price-wrapper h4,
+    .price-value {
+        font-size: 14px;
+    }
+
+    .car-spec {
+        justify-content: flex-start;
+    }
 }

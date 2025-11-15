@@ -30,7 +30,7 @@ export default function Cars() {
   }
 
   return (
-    <div className="container">
+    <div className="container mb-4">
       <div className="row g-3 py-5">
         {limitCars.map((car) => (
           <CarCard car={car} key={car.id} />

@@ -1,0 +1,24 @@
+/* Search Text */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: var(--light-text-color);
+}
+
+.search-wrapper {
+    width: 100%;
+}
+
+.search-wrapper input {
+    box-shadow: 0px 0px 12px 4px #135EAC1F;
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 12px;
+}
+
+.highlightedText {
+    background-color: var(--main-color);
+    color: #fff;
+}
